@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>rats & insects</title>
+  <link rel="shortcut icon" href="/photos/icon1.png" type="image/png">
+  <link rel="stylesheet" href="/css/info.css">
+</head>
+<body>
+  <header>
+    <div id="logo" onclick="slowScroll('#top')">
+      <span>R&I destroyers</span>
+    </div>
+    <div id="about">
+      <a href="/" title="Main page" onclick="slowScroll('#main')">Home</a>
+      <a href="/info" title="Info" onclick="slowScroll('#gadzaThreeDd')">Info</a>
+      <a href="/leaders" title="Lead" onclick="slowScroll('#Leader')">Leaders</a>
+      <a href="/about" title="about" onclick="slowScroll('#Leader')">About Us</a>
+    </div>
+  </header>
+
+  <div id="top"></div>
+
+  <div id="inf">
+    <span>Info page</span>
+    <p>Our main mission is to make ur home more safe, clean and comfortable</p>
+    <p>U can find some info about rats or insects</p>
+  </div>
+
+  <div id="numbSecond">
+    <h3> <a href="/">Disinsection</a> </h3>
+    <h3> <a href="/">Deratization</a> </h3>
+    <h3> <a href="/">Disinfection</a> </h3>
+    <h3> <a href="/">About Us</a> </h3>
+  </div>
+
+  <div id="numbFirst">
+    <h2>Disinfection services</h2>
+  </div>
+
+  <div id="numbFourth">
+    <div class="col1">
+      <img src="photos/ratinfo.jpg" alt="">
+      <span>Rats & Mice</span>
+    </div>
+
+    <div class="col2">
+      <img src="photos/cockroach.jpg" alt="">
+      <span>Cockroaches</span>
+    </div>
+
+    <div class="col3">
+      <img src="photos/bedbugs.jpg" alt="">
+      <span>Bedbugs</span>
+    </div>
+
+    <div class="col4">
+      <img src="photos/ant.jpg" alt="">
+      <span>Ants</span>
+    </div>
+  </div>
+
+  <div id="faq">
+    <div>
+      <span class="title">Payment</span><br>
+      <span class="heading">How u can make a transaction?</span>
+      <a href="/lab1">Отчеты</a>
+    </div>
+    <div>
+      <span class="title">Contacts</span><br>
+      <span class="heading">How u can сontact us?</span>
+      <p>RNA</p>
+    </div>
+    <div>
+      <span class="title">Info</span><br>
+      <span class="heading">Some info about us</span>
+      <p>Info Info Info Info Info</p>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+function slowScroll(id) {
+  $('html, body').animate({
+    scrollTop: $(id).offset().top
+  }, 500);
+}
+
+  $(document).on("scroll", function () {
+    if($(window).scrollTop() === 0)
+      $("header").removeClass("fixed");
+    else
+      $("header").attr("class", "fixed");
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Russo+One&display=swap');
+
+
+* {
+  margin: 0;
+  paddind: 0;
+  outline: none;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #fff;
+  font-family: Trebuchet MS, Helvetica;
+}
+
+header {
+  width: 100%;
+  padding: 10px 0.5% 0px 0.5px;
+  background: transparent;
+  float: left;
+  position: fixed;
+}
+
+header #logo {
+  color: #1978a5 ;
+  cursor: pointer;
+}
+
+header #logo span {
+  font-size: 1.7em;
+  line-height: 45px;
+  margin-left: 40px;
+  font-family: 'Russo One', serif;
+}
+
+
+@media (min-width: 701px) {
+  #logo {
+    float: left;
+    width: 30%;
+    font-size: 1.5em;
+  }
+
+  #about {
+    float: right;
+    width: 67%;
+  }
+}
+
+@media (max-width: 700px) {
+  #logo {
+    margin-top: 15px;
+    width: 100%;
+    font-size: 1.1em;
+  }
+  #about {
+    float: left;
+    width: 100%;
+  }
+}
+
+
+#about {
+  text-align: center;
+  font-size: 1em;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+
+#about > a {
+  color: #1978a5;
+  text-decoration: none;
+}
+
+
+#about > a:hover {
+  color: #b0b0b0;
+}
+
+#about > a:not(:last-child) {
+  margin-right: 7%;
+}
+
+.fixed {
+  z-index: 5000;
+  background-color: #fff;
+  border-bottom: 1px solid silver;
+}
+
+header.fixed #logo {
+  color: #1978a5 !important;
+}
+
+.fixed #about a {color: #1978a5}
+.fixed #about a:hover {color: #1978a5}
+
+
+#top {
+  padding-top: 4%;
+  padding-bottom: 0.2%;
+  width: 100%;
+  background-image: url(/photos/white.png);
+  background-blend-mode: multiply;
+  background-color: #f4f4f4;
+}
+
+#inf {
+  width: 100%;
+  height: 300px;
+  background-image: url(/photos/infpage.jpg);
+  background-blend-mode: multiply;
+  background-color: #1978a5;
+  background-size: contain;
+  text-align: center;
+  color: #fff;
+}
+
+#inf span {
+  font-size: 4em;
+}
+
+#inf p {
+  color: #ccc;
+  font-size: 1.5em;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 40px;
+}
+
+
+#numbFirst h2{
+  font-size: 4em;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+
+
+#numbSecond {
+  float: left;
+  width: 200px;
+  background: #fff;
+  vertical-align: middle;
+  margin-top: 200px;
+}
+
+#numbSecond h3{
+  font-size: 1.5em;
+  padding: 20px;
+  padding-left: 10px;
+}
+
+#numbSecond a {
+  color: #1978a5;
+  text-decoration: none;
+  text-align: center;
+  line-height: 40px;
+}
+
+
+#numbFourth img {
+  height: 250px;
+  width: 300px;
+  margin-right: 10px;
+  float: left;
+  margin-bottom: 50px;
+}
+
+.col1, .col2, .col3, .col4 {
+  padding: 10px;
+}
+
+.col1 img {
+  border-top-left-radius: 100px;
+}
+
+.col2 img {
+  border-top-right-radius: 100px;
+}
+
+.col3 img {
+  border-bottom-left-radius: 100px;
+}
+
+.col4 img {
+  border-bottom-right-radius: 100px;
+}
+
+
+
+
+#faq {
+  background-color: #fff;
+  border-top: 2px dashed #e4e3e3;
+  width: 100%;
+  float: left;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+@media (min-width: 801px) {
+  #faq div {
+    width: 25%;
+    margin-left: 6%;
+    float: left;
+  }
+}
+
+@media (max-width: 800px) {
+  #faq div {
+    width: 80%;
+    margin-left: 10%;
+    float: left;
+  }
+}
+
+
+#faq .title {
+  font-weight: lighter;
+  color: #a3a0ad;
+  margin-bottom: 20px;
+  font-size: 2.2em;
+}
+
+
+#faq .heading {
+  color: #7d7d7d;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+
+#faq p {
+  font-family: Arimo, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #4a4a4a;
+  font-size: 0.95em;
+  margin-bottom: 40px;
+}
